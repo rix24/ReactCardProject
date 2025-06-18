@@ -1,0 +1,10 @@
+.contentCard {
+    max-width: 340px;
+    margin-top: 120px;
+}
+
+.contentImage {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
