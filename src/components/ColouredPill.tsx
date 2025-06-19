@@ -1,4 +1,4 @@
-import Styles from "./ColouredPillStyles.module.css";
+import Styles from "./styling/ColouredPillStyles.module.css";
 
 function ColouredPill({ text }: { text: string }) {
   return (

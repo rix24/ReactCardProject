@@ -1,5 +1,5 @@
 import spaceJoy from "../assets/spacejoy.jpg";
-import styles from "./ContentCardStyles.module.css";
+import styles from "./styling/ContentCardStyles.module.css";
 import ColouredPill from "./ColouredPill";
 
 type ContentCardProps = {
@@ -28,6 +28,7 @@ function ContentCard({
         <span className={styles.contentText}>{contentText}</span>
         <a href={link} className={styles.hyperLink}>
           Read more
+          <span style={{ marginLeft: "0.25em" }}>&#10132;</span>
         </a>
       </div>
     </div>
