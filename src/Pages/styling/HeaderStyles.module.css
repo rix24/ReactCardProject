@@ -1,0 +1,15 @@
+.header {
+    border: solid 1px #7c7c7c;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.headerElement {
+    margin: 0px;
+    font-weight: bold;
+}
+
+.goHomeButton {
+    margin-left: auto;
+}

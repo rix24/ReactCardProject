@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import ContentCard from "../components/ContentCard";
 import Styles from "./styling/ContentCardDisplayPageStyles.module.css";
+import GoHomeButton from "../components/GoHomeButton";
+import React from "react";
 
 function ContentCardDisplayPage() {
   const pillText = "Interior";
@@ -9,14 +11,16 @@ function ContentCardDisplayPage() {
     "Curated vibrant colours for your living, make it pop & calm in the same time.";
 
   return (
-    <div className={Styles.contentCard}>
-      <ContentCard
-        pillText={pillText}
-        titleText={titleText}
-        contentText={contentText}
-        link="https://localhost:5173"
-      />
-    </div>
+    <>
+      <div className={Styles.contentCard}>
+        <ContentCard
+          pillText={pillText}
+          titleText={titleText}
+          contentText={contentText}
+          link="https://localhost:5173"
+        />
+      </div>
+    </>
   );
 }
 

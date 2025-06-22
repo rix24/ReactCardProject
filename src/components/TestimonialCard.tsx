@@ -1,5 +1,6 @@
 import Styles from "./styling/TestimonialCard.module.css";
 import profileThumbnail from "../assets/profileThumbnail.png";
+import React from "react";
 
 function TestimonialCard() {
   return (
@@ -16,7 +17,11 @@ function TestimonialCard() {
         </div>
       </div>
       <div className={Styles.contentText}>
-        <span>test text</span>
+        <span>
+          Ive been searching for high quality abstract images for my design
+          projects, and I'm thrilled to have found this platform. The variety
+          and depth of creativity are astounding!{" "}
+        </span>
       </div>
     </div>
   );

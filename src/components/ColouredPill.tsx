@@ -1,4 +1,5 @@
 import Styles from "./styling/ColouredPillStyles.module.css";
+import React from "react";
 
 function ColouredPill({ text }: { text: string }) {
   return (

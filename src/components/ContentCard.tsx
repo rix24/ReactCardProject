@@ -1,7 +1,7 @@
 import spaceJoy from "../assets/spacejoy.jpg";
 import styles from "./styling/ContentCardStyles.module.css";
 import ColouredPill from "./ColouredPill";
-
+import React from "react";
 type ContentCardProps = {
   pillText: string;
   titleText: string;

@@ -1,0 +1,16 @@
+.buttonContainer {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+  width: 200px; 
+  
+}
+
+.button {
+    background-color: rgb(231, 231, 231);
+    border-top: none;
+    border-bottom: none;
+    border-left: solid 1px #7c7c7c;
+    border-right: none;
+}

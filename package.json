@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "npx jest --watchAll"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
@@ -15,10 +16,31 @@
     "react-router-dom": "^7.6.2"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1",
+    "@babel/preset-typescript": "^7.27.1",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/jest": "^30.0.0",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
+    "@types/testing-library__react": "^10.0.1",
     "@vitejs/plugin-react": "^4.5.2",
+    "babel-jest": "^30.0.2",
+    "identity-obj-proxy": "^3.0.0",
+    "jest-environment-jsdom": "^30.0.2",
     "typescript": "^4.9.3",
     "vite": "^6.3.5"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.ts"
+    ],
+    "moduleNameMapper": {
+    "\\.(css|less|scss|sass)$": "identity-obj-proxy",
+    "\\.(jpg|jpeg|png|gif|svg)$": "<rootDir>/__mocks__/fileMock.js"
+  }
   }
 }
